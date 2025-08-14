@@ -219,12 +219,70 @@ body {
 }
 
 /* PROJECT_SECTION */
+.projects-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
+.project-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border-left: 0.5rem solid #fbbf24;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: #6b7280;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.action-btn i {
+    font-size: 1.25rem;
+    color: #6b7280;
+}
 
 /* SIDEBAR CONTENT STYLES */
 .sidebar-content {
