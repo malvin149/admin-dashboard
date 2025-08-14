@@ -31,6 +31,52 @@ body {
     color: #fff;
 }
 
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-header i {
+    font-size: 2rem;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-primary ul,
+.nav-secondary ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.nav-primary a,
+.nav-secondary a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.nav-primary a:hover,
+.nav-secondary a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-primary i,
+.nav-secondary i {
+    font-size: 1.25rem;
+}
+
 /* HEADER STYLES */
 .main-header {
     grid-column: 2;
@@ -40,7 +86,6 @@ body {
     background-color: #fff;
     padding: 1rem 2rem;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-    border: 5px solid firebrick;
 }
 
 /* MAIN CONTENT STYLES */
@@ -52,7 +97,6 @@ body {
     gap: 1.5rem;
     padding: 1.5rem;
     background-color: #e5e7eb;
-    border: 5px solid firebrick;
 }
 
 /* PROJECT_SECTION */
@@ -60,7 +104,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-    border: 5px solid firebrick;
 }
 
 
@@ -68,5 +111,4 @@ body {
 .sidebar-content {
     display: grid;
     gap: 1.5rem;
-    border: 5px solid firebrick;
 }
