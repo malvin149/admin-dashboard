@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Screen reader only class for accessibility -->
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <header class="sidebar-header">
+                <i class="mdi mdi-view-dashboard" aria-hidden="true"></i>
+                <h1>Dashboard</h1>
+            </header>
+            <section class="nav-primary">
+                <ul>
+                    <li><a href="#home"><i class="mdi mdi-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="#profile"><i class="mdi mdi-account" aria-hidden="true"></i>Profile</a></li>
+                    <li><a href="#messages"><i class="mdi mdi-message" aria-hidden="true"></i>Messages</a></li>
+                    <li><a href="#history"><i class="mdi mdi-history" aria-hidden="true"></i>History</a></li>
+                    <li><a href="#tasks"><i class="mdi mdi-clipboard-list" aria-hidden="true"></i>Tasks</a></li>
+                    <li><a href="#communities"><i class="mdi mdi-account-group" aria-hidden="true"></i>Communities</a></li>
+                </ul>
+            </section>
+            <section class="nav-secondary">
+                <ul>
+                    <li><a href="#settings"><i class="mdi mdi-cog" aria-hidden="true"></i>Settings</a></li>
+                    <li><a href="#support"><i class="mdi mdi-help-box" aria-hidden="true"></i>Support</a></li>
+                    <li><a href="#privacy"><i class="mdi mdi-shield-account" aria-hidden="true"></i>Privacy</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-top">
+                <div class="search-container">
+                    <label for="search-input" class="sr-only"></label>
+                    <i class="mdi mdi-magnify" ariahidden="true"></i>
+                    <input type="search" id="search-input" placehoder="Search...">
+                </div>
+
+                <div class="header-actions">
+                    <button class="notification-btn" aria-label="Notifications">
+                        <i class="mdi mdi-bell" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="user-info-compact"><img src="#" alt="Morgan Oakley profile picture" class="avatar-small"><span class="username">Morgan Oakley</span></div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="user-welcome">
+                    <img src="#" alt="Morgan Oakley profile picture" class="avatar-large">
+                    <div class="welcome-text">
+                        <p class="greeting">Hi there,</p>
+                        <h2 class="user-name">Morgan Oakley (@morgan)</h2>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary">New</button>
+                    <button class="btn btn-primary">Upload</button>
+                    <button class="btn btn-primary">Share</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Project Section -->
+             <section class="projects-section">
+                <h2>Your Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Super Cool Project</h3>
+                        <p class="project-description">Sad tempus ut lacus ut scelerique. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Less Cool Project</h3>
+                        <p class="project-description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Impossible App</h3>
+                        <p class="project-description">In hac habitasse platea dictumst. Vivamus dictum nutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Easy Peasy App</h3>
+                        <p class="project-description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissum urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Ad Blocker</h3>
+                        <p class="project-description">Quisque eget nutrum nisi. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Money Maker</h3>
+                        <p class="project-description">Praesent conallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerique tortor purus ait amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        <div class="project-actions">
+                            <button class="action-btn" aria-label="Add to favorites">
+                                <i class="mdi mdi-star-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Watch project">
+                                <i class="mdi mdi-eye-plus-outline" aria-hidden="true"></i>
+                            </button>
+                            <button class="action-btn" aria-label="Share project">
+                                <i class="mdi mdi-share-variant" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+             </section>
+            
+            <!-- Sidebar Content -->
+             <aside class="sidebar-content">
+                <!-- Announcements -->
+                 <section class="announcements">
+                    <h2>Announcements</h2>
+                    <div class="announcements-container">
+                        <article class="announcement-item">
+                            <h3 class="announcement-title">Site Maintenance</h3>
+                            <p class="announcement-text">
+                               Vestibulumcondimentum tellus lacus, in accumsanelit maximus ac. Donec hendrerit sodales congue... 
+                            </p>
+                        </article>
+
+                        <article class="announcement-item">
+                            <h3 class="announcement-title">Community Share Day</h3>
+                            <p class="announcement-text">
+                                Nam vel lectus tincidunt, nutrum nulla eu, omare libero. Aliquam dictum accumsan porttitor...
+                            </p>
+                        </article>
+
+                        <article class="announcement-item">
+                            <h3 class="announcement-title">Updated Privacy Policy</h3>
+                            <p class="announcement-text">
+                                Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...
+                            </p>
+                        </article>
+                    </div>
+                 </section>
+
+                 <!-- Trending -->
+                  <section class="trending">
+                    <h2>Trending</h2>
+                    <div class="trending-container">
+                        <div class="trending-item">
+                            <img src="#" alt="@tegan profile picture" class="trending-avatar">
+                            <div class="trending-info">
+                                <p class="trending-username">@tegan</p>
+                                <p class="trending-project">World Peace Builder</p>
+                            </div>
+                        </div>
+
+                        <div class="trending-item">
+                            <img src="#" alt="@morgan profile picture" class="trending-avatar">
+                            <div class="trending-info">
+                                <p class="trending-username">@morgan</p>
+                                <p class="trending-project">Super Cool Project</p>
+                            </div>
+                        </div>
+
+                        <div class="trending-item">
+                            <img src="#" alt="@kendall profile picture" class="trending-avatar">
+                            <div class="trending-info">
+                                <p class="trending-username">@kendall</p>
+                                <p class="trending-project">Life Changing App</p>
+                            </div>
+                        </div>
+
+                        <div class="trending-item">
+                            <img src="#" alt="@alex profile picture" class="trending-avatar">
+                            <div class="trending-info">
+                                <p class="trending-username">@alex</p>
+                                <p class="trending-project">No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+             </aside>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+/* MAIN LAYOUT */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    grid-row: 1 / 3;
+    display: grid;
+    gap: 2rem;
+    background-color: #1992d4;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+/* HEADER STYLES */
+.main-header {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border: 5px solid firebrick;
+}
+
+/* MAIN CONTENT STYLES */
+.main-content {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5  rem;
+    background-color: #e5e7eb;
+    border: 5px solid firebrick;
+}
+
+/* PROJECT_SECTION */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    border: 5px solid firebrick;
+}
+
+
+/* SIDEBAR CONTENT STYLES */
+.sidebar-content {
+    display: grid;
+    gap: 1.5rem;
+    border: 5px solid firebrick;
+}
