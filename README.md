@@ -4,7 +4,7 @@ This project is a modern admin dashboard interface built with HTML and CSS. It d
 
 ## Live Demo/Screenshot
 
-[Live Demo](https://yourusername.github.io/admin-dashboard/)
+[Live Demo](https://malvin149.github.io/admin-dashboard/)
 
 ![Screenshot of the Admin Dashboard](./assets/preview.png)
 
